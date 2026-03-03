@@ -19,10 +19,12 @@ body {
 ::-webkit-scrollbar {
   width: 12px !important;
   background: #000000 !important;
+  height: calc(100vh - 80px) !important;
 }
 
 ::-webkit-scrollbar-track {
   background: #000000 !important;
+  margin-bottom: 80px !important;
 }
 
 ::-webkit-scrollbar-thumb {
