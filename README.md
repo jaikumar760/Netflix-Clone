@@ -57,9 +57,14 @@ npm install
 
 3. **Set up environment variables**
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory (copy from `.env.example`):
+```bash
+cp .env.example .env
+```
+
+Then update with your actual API keys:
 ```env
-VITE_TMDB_TOKEN=your_tmdb_api_token
+VITE_TMDB_TOKEN=your_tmdb_api_read_access_token
 VITE_YOUTUBE_API_KEY=your_youtube_api_key
 ```
 
@@ -108,7 +113,7 @@ Netflix-Clone/
 │   ├── firebase.js      # Firebase configuration
 │   ├── fallbackData.js  # Fallback movie data
 │   └── App.jsx          # Main app component
-├── .env
+├── .env.example         # Environment variables template
 └── package.json
 ```
 
