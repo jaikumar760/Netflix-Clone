@@ -22,16 +22,16 @@ A pixel-perfect Netflix clone built with React, featuring real-time movie data, 
 
 **[View Live Demo](https://netflix-clone-roan-eta.vercel.app)**
 
-### 🔐 Test Credentials
+### 🔐 Demo Account
 
-For quick testing, use the following demo account:
+For quick evaluation, use the credentials below:
 
-| Field    | Value              |
-|----------|--------------------|
-| Email    | `demo@netflix.com` |
-| Password | `demo123`          |
+| Field    | Value                    |
+|----------|-------------------------|
+| Email    | `demo@netflixclone.app` |
+| Password | `Demo@2025!`            |
 
-> **Note:** You can also create your own account using the signup feature for a personalized experience.
+> **Note:** This account is provided for demonstration purposes only.
 
 ## 🛠️ Tech Stack
 
