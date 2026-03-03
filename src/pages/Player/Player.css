@@ -1,0 +1,31 @@
+.player {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.player-info {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.player-info p {
+  margin: 4px 0;
+}
