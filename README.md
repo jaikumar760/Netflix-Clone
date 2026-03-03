@@ -26,16 +26,10 @@ A pixel-perfect Netflix clone built with React, featuring real-time movie data, 
 
 For quick evaluation, use the credentials below:
 
-<table>
-  <tr>
-    <td><strong>Email</strong></td>
-    <td><code>demo@netflixclone.app</code></td>
-  </tr>
-  <tr>
-    <td><strong>Password</strong></td>
-    <td><code>Demo@2025!</code></td>
-  </tr>
-</table>
+```
+Email:    demo@netflixclone.app
+Password: Demo@2025!
+```
 
 > **Note:** This account is provided for demonstration purposes only.
 
