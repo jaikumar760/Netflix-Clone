@@ -3,14 +3,70 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
+    padding: 100px 4% 50px;
+}
+
+.search-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-card:hover {
+    transform: scale(1.05);
 }
 
 .search-card img {
     width: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .search-card p {
     margin-top: 8px;
     text-align: center;
+    color: #e5e5e5;
+}
+
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+        padding: 90px 3% 40px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .search-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+        padding: 80px 3% 35px;
+    }
+    .search-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+        padding: 70px 2% 30px;
+    }
+    .search-card p {
+        font-size: 11px;
+    }
+}
+
+/* Mac/Desktop Large */
+@media (min-width: 1440px) {
+    .search-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 25px;
+        padding: 120px 6% 60px;
+    }
+    .search-card p {
+        font-size: 16px;
+    }
 }

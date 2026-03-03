@@ -18,3 +18,47 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .spinner::after {
+    width: 45px;
+    height: 45px;
+    border-width: 4px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .spinner {
+    min-height: 150px;
+  }
+  .spinner::after {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spinner {
+    min-height: 120px;
+  }
+  .spinner::after {
+    width: 35px;
+    height: 35px;
+    border-width: 3px;
+  }
+}
+
+/* Mac/Desktop Large */
+@media (min-width: 1440px) {
+  .spinner {
+    min-height: 250px;
+  }
+  .spinner::after {
+    width: 60px;
+    height: 60px;
+    border-width: 6px;
+  }
+}

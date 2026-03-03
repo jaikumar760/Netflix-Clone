@@ -141,11 +141,34 @@
 
 @media (max-width: 1200px) {
   .card {
-    width: 280px;
-    height: 157px;
+    width: 260px;
+    height: 146px;
   }
   .title-cards h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-cards {
+    margin: 45px 0 35px;
+  }
+  .title-cards h2 {
+    font-size: 1.4rem;
+    padding-left: 3%;
+  }
+  .card-list {
+    padding: 0 3% 25px;
+    gap: 10px;
+  }
+  .card {
+    width: 220px;
+    height: 124px;
+    margin-bottom: 35px;
+  }
+  .card:hover {
+    transform: scale(1.12) translateY(-10px);
   }
 }
 
@@ -162,12 +185,15 @@
     gap: 8px;
   }
   .card {
-    width: 240px;
-    height: 135px;
+    width: 200px;
+    height: 112px;
     margin-bottom: 30px;
   }
   .card:hover {
     transform: scale(1.08) translateY(-8px);
+  }
+  .card-title {
+    font-size: 14px;
   }
 }
 
@@ -184,15 +210,46 @@
     gap: 6px;
   }
   .card {
-    width: 200px;
-    height: 112px;
+    width: 160px;
+    height: 90px;
     margin-bottom: 25px;
   }
   .card-title {
-    font-size: 13px;
+    font-size: 12px;
   }
   .card-info {
     font-size: 10px;
+  }
+  .card:hover {
+    transform: scale(1.05) translateY(-5px);
+  }
+}
+
+/* Mac/Desktop Large (1440px+) */
+@media (min-width: 1440px) {
+  .title-cards h2 {
+    font-size: 2rem;
+    padding-left: 6%;
+  }
+  .card-list {
+    padding: 0 6% 35px;
+    gap: 15px;
+  }
+  .card {
+    width: 360px;
+    height: 202px;
+  }
+  .card-title {
+    font-size: 17px;
+  }
+  .card-info {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
   }
 }
 
@@ -217,12 +274,12 @@
 
 .scroll-btn.left {
   left: 0;
-  background: linear-gradient(to left, rgba(0,0,0,0.85), rgba(0,0,0,0.5));
+  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.5));
 }
 
 .scroll-btn.right {
   right: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.5));
+  background: linear-gradient(to left, rgba(0,0,0,0.85), rgba(0,0,0,0.5));
 }
 
 .title-cards:hover .scroll-btn {
@@ -230,51 +287,14 @@
 }
 
 .scroll-btn:hover {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.95);
 }
 
-@media (max-width: 768px) {
+/* Mac/Desktop Large Scroll Buttons */
+@media (min-width: 1440px) {
   .scroll-btn {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .card {
-    width: 200px;
-    height: 112px;
-  }
-}
-
-@media (max-width: 768px) {
-  .title-cards h2 {
-    font-size: 1.2rem;
-    margin-left: 3%;
-  }
-  .card-list {
-    padding: 0 3% 15px;
-    gap: 6px;
-  }
-  .card {
-    width: 160px;
-    height: 90px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-cards {
-    margin: 30px 0;
-  }
-  .title-cards h2 {
-    font-size: 1rem;
-    margin-left: 2%;
-  }
-  .card-list {
-    padding: 0 2% 10px;
-    gap: 4px;
-  }
-  .card {
-    width: 140px;
-    height: 78px;
+    width: 35px;
+    height: 220px;
+    font-size: 26px;
   }
 }

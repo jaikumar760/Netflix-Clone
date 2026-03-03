@@ -14,7 +14,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.95);
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
@@ -114,7 +114,7 @@
 
 @media (max-width:800px) {
   .navbar {
-    padding: 20px 4%;
+    padding: 15px 3%;
   }
   .navbar-left ul {
     display: none;
@@ -122,16 +122,74 @@
   .navbar-left img {
     width: 80px;
   }
+  .navbar-right {
+    gap: 15px;
+  }
+  .navbar-right p {
+    display: none;
+  }
 }
 
 @media (max-width:500px) {
+  .navbar {
+    padding: 12px 2%;
+  }
   .navbar-left img {
     width: 70px;
   }
   .navbar-right {
-    gap: 10px;
+    gap: 8px;
   }
   .search-input {
-    width: 150px;
+    width: 120px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-profile img {
+    width: 28px;
+  }
+}
+
+/* Tablet Specific (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 18px 3%;
+  }
+  .navbar-left {
+    gap: 30px;
+  }
+  .navbar-left img {
+    width: 90px;
+  }
+  .navbar-left ul {
+    gap: 15px;
+  }
+  .navbar-left ul li {
+    font-size: 13px;
+  }
+  .search-input {
+    width: 180px;
+  }
+}
+
+/* Mac/Desktop Large (1440px+) */
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 25px 6%;
+  }
+  .navbar-left {
+    gap: 60px;
+  }
+  .navbar-left img {
+    width: 120px;
+  }
+  .navbar-left ul {
+    gap: 25px;
+  }
+  .search-input {
+    width: 250px;
   }
 }

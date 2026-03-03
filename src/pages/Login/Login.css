@@ -7,13 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .login-form {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 40px;
   border-radius: 8px;
-  width: 320px;
+  width: 100%;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -23,24 +25,28 @@
 .login-form h2 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 .login-form input {
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 4px;
   font-size: 14px;
+  background-color: #333;
+  color: white;
 }
 
 .login-form button {
   background-color: #e50914;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
+  font-size: 16px;
 }
 
 .login-form button:hover {
@@ -52,6 +58,7 @@
   font-size: 13px;
   text-align: center;
 }
+
 .signup-link {
   color: #b3b3b3;
   font-size: 14px;
@@ -67,4 +74,84 @@
 
 .signup-link a:hover {
   text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .login-form {
+    max-width: 400px;
+    padding: 35px;
+  }
+  .login-form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .login-page {
+    padding: 15px;
+  }
+  .login-form {
+    max-width: 380px;
+    padding: 30px;
+  }
+  .login-form h2 {
+    font-size: 1.6rem;
+  }
+  .login-form input {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .login-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 10px;
+  }
+  .login-form {
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+  .login-form h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .login-form input {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .login-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .signup-link {
+    font-size: 12px;
+  }
+  .error {
+    font-size: 11px;
+  }
+}
+
+/* Mac/Desktop Large */
+@media (min-width: 1440px) {
+  .login-form {
+    max-width: 500px;
+    padding: 50px;
+  }
+  .login-form h2 {
+    font-size: 2.2rem;
+  }
+  .login-form input {
+    padding: 14px;
+    font-size: 15px;
+  }
+  .login-form button {
+    padding: 14px;
+    font-size: 17px;
+  }
 }

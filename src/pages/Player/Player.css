@@ -18,6 +18,11 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
 }
 
 .player-info {
@@ -28,4 +33,67 @@
 
 .player-info p {
   margin: 4px 0;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .player {
+    padding: 15px;
+  }
+  .back-btn {
+    width: 28px;
+    height: 28px;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .player {
+    padding: 10px;
+  }
+  .back-btn {
+    width: 26px;
+    height: 26px;
+    top: 12px;
+    left: 12px;
+  }
+  .player-info {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .player {
+    padding: 8px;
+  }
+  .back-btn {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 10px;
+  }
+  .player-info {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
+
+/* Mac/Desktop Large */
+@media (min-width: 1440px) {
+  .player {
+    padding: 30px;
+  }
+  .back-btn {
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 30px;
+  }
+  .player-info {
+    margin-top: 25px;
+    font-size: 18px;
+  }
 }

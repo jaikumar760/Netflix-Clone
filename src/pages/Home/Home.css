@@ -112,49 +112,84 @@
 
 @media (max-width: 1200px) {
   .hero {
-    height: 70vh;
+    height: 75vh;
   }
   .hero-caption {
-    max-width: 450px;
+    max-width: 480px;
+    bottom: 35%;
   }
   .hero-caption h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .hero-caption p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .more-cards {
-    margin-top: -120px;
+    margin-top: -100px;
+  }
+}
+
+/* Tablet Responsive (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 65vh;
+  }
+  .hero-caption {
+    bottom: 30%;
+    max-width: 420px;
+  }
+  .hero-caption h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  .hero-caption p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+  .hero-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+  .hero-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  .more-cards {
+    margin-top: -100px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 55vh;
   }
   .hero-caption {
     bottom: 25%;
-    left: 4%;
-    max-width: 350px;
+    left: 3%;
+    max-width: 340px;
   }
   .hero-caption h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
   }
   .hero-caption p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  .hero-btns {
+    gap: 12px;
   }
   .hero-btn {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .hero-btn img {
     width: 20px;
     height: 20px;
   }
   .more-cards {
-    margin-top: -80px;
+    margin-top: -70px;
   }
 }
 
@@ -164,29 +199,64 @@
   }
   .hero-caption {
     bottom: 20%;
-    left: 3%;
-    max-width: 280px;
+    left: 2%;
+    max-width: 260px;
   }
   .hero-caption h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
   }
   .hero-caption p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
   }
   .hero-btns {
     gap: 8px;
+    margin-top: 15px;
   }
   .hero-btn {
-    padding: 8px 16px;
-    font-size: 12px;
+    padding: 8px 14px;
+    font-size: 11px;
+    gap: 8px;
   }
   .hero-btn img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
   .more-cards {
-    margin-top: -60px;
+    margin-top: -50px;
+  }
+}
+
+/* Mac/Desktop Large (1440px+) */
+@media (min-width: 1440px) {
+  .hero {
+    height: 95vh;
+  }
+  .hero-caption {
+    max-width: 650px;
+    bottom: 35%;
+    left: 6%;
+  }
+  .hero-caption h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  .hero-caption p {
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+  }
+  .hero-btn {
+    padding: 18px 40px;
+    font-size: 20px;
+  }
+  .hero-btn img {
+    width: 32px;
+    height: 32px;
+  }
+  .more-cards {
+    margin-top: -140px;
   }
 }
